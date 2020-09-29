@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <header class="jumbotron">
+            <h1>Weather Dashboard</h1>
+            <p>Get your forecast here.</p>
+        </header>
+        <div class="row">
+            <!--SEARCH BAR-->
+            <div class="col-md-4 navbar">
+                <h4>Search for a City:</h4>
+                <div class="search">
+                    <input id="searchInput" type="text">
+                    <button id="searchBtn" type="button">SEARCH</button>
+                </div>
+                <!--SEARCH LOCATIONS-->
+                <div class="cities">
+                    <br>
+                    <button type="button" class="cityBtn" id="AustinBtn" value="Austin">Austin</button><br>
+                    <button type="button" class="cityBtn" id="ChicagoBtn" value="Chicago">Chicago</button><br>
+                    <button type="button" class="cityBtn" id="NYBtn" value="New York City">New York City</button><br>
+                    <button type="button" class="cityBtn" id="OrlandoBtn" value="Orlando">Orlando</button><br>
+                    <button type="button" class="cityBtn" id="SFBtn" value="San Francisco">San Francisco</button><br>
+                    <button type="button" class="cityBtn" id="SeattleBtn" value="Seattle">Seattle</button><br>
+                    <button type="button" class="cityBtn" id="DenverBtn" value="Denver">Denver</button><br>
+                    <button type="button" class="cityBtn" id="AtlantaBtn" value="Atlanta">Atlanta</button>
+                </div>
+            </div>
+            <!--FORECAST DIV-->
+            <div class="col-md-8 forecast">
+                <div id="today">
+                    <h3><span id="cityname"></span> <span id="date"></span> <span id="icon"></span></h3>
+                    <div class=todayInfo>Temperature: <span id="temp"></span></div><br>
+                    <div class=todayInfo>Humidity: <span id="humid"></span></div><br>
+                    <div class=todayInfo>Wind Speed: <span id="windspeed"></span></div><br>
+                    <div class=todayInfo>UV Index: <span id="uv"></span></div><br>
+                    <div class=todayInfo>Coordinates: <span id="coord"></span></div>
+                </div>
+                <div class="row future"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 forecastday1">
+                <h2><span id="date1"></span> <span id="iconA"></span></h2>
+                <div class=day1Info>Temperature: <span id="temp1"></span></div><br>
+                <div class=day1Info>Humidity: <span id="humid1"></span></div><br>
+            </div>
+            <div class="col-md-2 forecastday2">
+                <h2><span id="date2"></span> <span id="iconB"></span></h2>
+                <div class=day1Info>Temperature: <span id="temp2"></span></div><br>
+                <div class=day1Info>Humidity: <span id="humid2"></span></div><br>
+            </div>
+            <div class="col-md-2 forecastday3">
+                <h2><span id="date3"></span> <span id="iconC"></span></h2>
+                <div class=day1Info>Temperature: <span id="temp3"></span></div><br>
+                <div class=day1Info>Humidity: <span id="humid3"></span></div><br>
+            </div>
+            <div class="col-md-2 forecastday4">
+                <h2><span id="date4"></span> <span id="iconD"></span></h2>
+                <div class=day1Info>Temperature: <span id="temp4"></span></div><br>
+                <div class=day1Info>Humidity: <span id="humid4"></span></div><br>
+            </div>
+            <div class="col-md-2 forecastday5">
+                <h2><span id="date5"></span> <span id="iconE"></span></h2>
+                <div class=day1Info>Temperature: <span id="temp5"></span></div><br>
+                <div class=day1Info>Humidity: <span id="humid5"></span></div><br>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

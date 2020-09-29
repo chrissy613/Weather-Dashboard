@@ -1,0 +1,51 @@
+.navbar{
+    padding:10px;
+    background-color: #e4fca7;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.cityBtn{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#searchBtn{
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.forecast{
+    background-color: #c1f5ee;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.forecastday1{
+    background-color: #99ff99;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-left: 175px;
+}
+.forecastday2{
+    background-color: #99ff99;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.forecastday3{
+    background-color: #99ff99;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.forecastday4{
+    background-color: #99ff99;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.forecastday5{
+    background-color: #99ff99;
+    border: 1px solid;
+    border-radius: 10px;
+}
