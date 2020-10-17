@@ -3,7 +3,7 @@
 $("#searchBtn").on("click", function() {
     //1ST AJAX vars
     var cityName1 = $("#searchInput").val();
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q="+cityName1+"&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q="+cityName1+"&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -115,7 +115,7 @@ $("#searchBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -162,7 +162,7 @@ if (localStorage.getItem('searchInput') !== null){
 //AUSTIN
 $("#AustinBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=Austin&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=Austin&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -274,7 +274,7 @@ $("#AustinBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -301,7 +301,7 @@ $("#AustinBtn").on("click", function() {
 
 $("#ChicagoBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=Chicago&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=Chicago&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -413,7 +413,7 @@ $("#ChicagoBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -440,7 +440,7 @@ $("#ChicagoBtn").on("click", function() {
 
 $("#NYBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=New York City&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=New York City&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -552,7 +552,7 @@ $("#NYBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -579,7 +579,7 @@ $("#NYBtn").on("click", function() {
 
 $("#OrlandoBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=Orlando&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=Orlando&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -691,7 +691,7 @@ $("#OrlandoBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -718,7 +718,7 @@ $("#OrlandoBtn").on("click", function() {
 
 $("#SFBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=San Francisco&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=San Francisco&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -830,7 +830,7 @@ $("#SFBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -857,7 +857,7 @@ $("#SFBtn").on("click", function() {
 
 $("#SeattleBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=Seattle&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=Seattle&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -969,7 +969,7 @@ $("#SeattleBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -996,7 +996,7 @@ $("#SeattleBtn").on("click", function() {
 
 $("#DenverBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=Denver&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=Denver&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -1108,7 +1108,7 @@ $("#DenverBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
@@ -1135,7 +1135,7 @@ $("#DenverBtn").on("click", function() {
 
 $("#AtlantaBtn").on("click", function() {
     //1ST AJAX vars
-    var queryURL1 = "http://api.openweathermap.org/data/2.5/forecast?q=Atlanta&appid=166a433c57516f51dfab1f7edaed8413";
+    var queryURL1 = "https://api.openweathermap.org/data/2.5/forecast?q=Atlanta&appid=166a433c57516f51dfab1f7edaed8413";
     $.ajax({
     url: queryURL1,
     method: "GET"
@@ -1247,7 +1247,7 @@ $("#AtlantaBtn").on("click", function() {
     $("#temp4").text(tempF5 + "°F");
     $("#temp5").text(tempF6 + "°F");
     //2ND AJAX var AND UV INDEX 
-    var queryURL2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
+    var queryURL2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+lon+"&appid=cdbdb8f717f41703f5e5a88731d41445";
     $.ajax({
         url: queryURL2,
         method: "GET"
